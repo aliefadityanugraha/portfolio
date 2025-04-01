@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="container mx-auto h-screen">
               <div className="grid grid-cols-12">
-                  <div className="col-span-6">
+                  <div className="lg:col-span-6 col-span-12 h-screen">
                      <div className="flex items-center h-full">
                          <div className="flex flex-col items-start gap-4 p-0 m-0">
                              <div className="flex items-center gap-2">
@@ -107,7 +107,7 @@ export default function Home() {
                          </div>
                      </div>
                   </div>
-                  <div className="col-span-6">
+                  <div className="lg:col-span-6 col-span-12 lg:block hidden">
                     <Lanyard  position={[0, 0, 15]} gravity={[0, -40, 0]}/>
                   </div>
               </div>
