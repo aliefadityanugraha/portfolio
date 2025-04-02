@@ -24,7 +24,7 @@ export default function GradientText({
 
     return (
         <div
-            className={`relative py-4 px-5 flex max-w-fit flex-row items-center justify-center rounded-[1.25rem] font-medium backdrop-blur transition-shadow duration-500 overflow-hidden cursor-pointer ${className}`}
+            className={`py-2 px-5 flex max-w-fit flex-row items-center justify-center rounded-full font-medium backdrop-blur transition-shadow duration-500 overflow-hidden cursor-pointer ${className}`}
         >
             {showBorder && (
                 <div
@@ -35,7 +35,7 @@ export default function GradientText({
                     }}
                 >
                     <div
-                        className="absolute inset-0 bg-[#222222] rounded-[1.25rem] z-[-1]"
+                        className="absolute inset-0 bg-[#071C21] rounded-[1.25rem] z-[-1]"
                         style={{
                             width: "calc(100% - 2px)",
                             height: "calc(100% - 2px)",
