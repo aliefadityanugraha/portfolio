@@ -13,14 +13,15 @@ interface ScrollVelocityProps {
   scrollerStyle?: React.CSSProperties;
 }
 
-export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
-                                                                velocity = 50,
-                                                                className = "",
-                                                                parallaxClassName,
-                                                                scrollerClassName,
-                                                                parallaxStyle,
-                                                                scrollerStyle,
-                                                              }) => {
+export const ScrollVelocity: React.FC<ScrollVelocityProps> = (
+    {
+        velocity = 50,
+        className = "",
+        parallaxClassName,
+        scrollerClassName,
+        parallaxStyle,
+        scrollerStyle,
+        }) => {
   const baseX = useMotionValue(0); // Posisi horizontal awal
   const containerRef = useRef<HTMLDivElement>(null); // Referensi ke container utama
 

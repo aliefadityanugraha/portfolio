@@ -1,5 +1,6 @@
 import FadeContent from "@/app/components/FadeContent/FadeContent";
 import AnimatedContent from "@/app/components/AnimatedContent/AnimatedContent";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -21,44 +22,44 @@ export default function Navbar() {
                 <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                     <ul className="hidden gap-6 lg:text-lg text-sm sm:flex">
                         <li className="group relative">
-                            <a className="" href="/">
+                            <Link className="active-link" href="/">
                             <span className="relative inline-flex overflow-hidden">
                                 <div className="translate-y-0 skew-y-0 transform-gpu transition-transform duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-12">Home
                                 </div>
                                 <div className="absolute translate-y-[110%] skew-y-12 transform-gpu text-text-primary transition-transform duration-500 group-hover:translate-y-0 group-hover:skew-y-0">Home
                                 </div>
                             </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="group relative">
-                            <a className="active-link" href="/about">
+                            <Link className="" href="/about">
                             <span className="relative inline-flex overflow-hidden">
                                 <div className="translate-y-0 skew-y-0 transform-gpu transition-transform duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-12">About
                                 </div>
                                 <div className="absolute translate-y-[110%] skew-y-12 transform-gpu text-text-primary transition-transform duration-500 group-hover:translate-y-0 group-hover:skew-y-0">About
                                 </div>
                             </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="group relative">
-                            <a className="" href="/projects">
+                            <Link className="" href="/projects">
                             <span className="relative inline-flex overflow-hidden">
                                 <div className="translate-y-0 skew-y-0 transform-gpu transition-transform duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-12">Projects
                                 </div>
                                 <div className="absolute translate-y-[110%] skew-y-12 transform-gpu text-text-primary transition-transform duration-500 group-hover:translate-y-0 group-hover:skew-y-0">Projects
                                 </div>
                             </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="group relative">
-                            <a className="" href="/contact">
+                            <Link className="" href="/contact">
                             <span className="relative inline-flex overflow-hidden">
                                 <div className="translate-y-0 skew-y-0 transform-gpu transition-transform duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-12">Contact
                                 </div>
                                 <div className="absolute translate-y-[110%] skew-y-12 transform-gpu text-text-primary transition-transform duration-500 group-hover:translate-y-0 group-hover:skew-y-0">Contact
                                 </div>
                             </span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </FadeContent>
