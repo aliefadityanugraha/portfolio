@@ -1,6 +1,5 @@
 import FadeContent from "@/app/components/FadeContent/FadeContent";
 import AnimatedContent from "@/app/components/AnimatedContent/AnimatedContent";
-import SplitText from "@/app/components/SplitText/SplitText";
 
 export default function Navbar() {
     return (
