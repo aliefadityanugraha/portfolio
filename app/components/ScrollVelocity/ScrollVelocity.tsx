@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import items from "./items";
+import Image from "next/image";
 
 interface ScrollVelocityProps {
   velocity?: number;
@@ -57,7 +58,9 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = (
                   key={index}
                   className={`flex items-center space-x-2 pl-4 pr-8 py-2 mx-2 rounded-full bg-[#C6DE41] ${className}`}
               >
-                <img src={item.icon} alt={item.name} className="w-5 drop-shadow-sm" />
+                <div className="relative w-6 h-5">
+                    <Image src={item.icon} alt={item.name} fill />
+                </div>
                 <span>{item.name}</span>
               </div>
           ))}

@@ -7,7 +7,6 @@ import Squares from "@/app/components/Squares/Squares";
 import Aurora from "@/app/components/Aurora/Aurora";
 import GradientText from "@/app/components/GradientText/GradientText";
 import ScrollVelocity from "@/app/components/ScrollVelocity/ScrollVelocity";
-import Navbar from "@/app/components/Navbar/Navbar";
 import Masonry from "@/app/components/Masonry/Masonry";
 
 export default function Home() {
@@ -25,10 +24,7 @@ export default function Home() {
     ];
 
   return (
-      <div className="min-h-screen overflow-x-hidden bg-[#071C21] text-white">
-          <div className="fixed top-0 left-0 z-10 w-full">
-              <Navbar></Navbar>
-          </div>
+        <>
           <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-0">
               <Aurora
                   colorStops={["#C6DE41", "#2D6E7E", "#153B44"]}
@@ -96,10 +92,8 @@ export default function Home() {
                                      delay={50}
                                      animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                                      animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-                                     // easing="easeOutCubic"
                                      threshold={0.2}
                                      rootMargin="-50px"
-                                     // onLetterAnimationComplete={handleAnimationComplete}
                                  />
                                  <SplitText
                                      text="Full Stack Developer"
@@ -107,10 +101,8 @@ export default function Home() {
                                      delay={150}
                                      animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                                      animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-                                     // easing="easeOutCubic"
                                      threshold={0.2}
                                      rootMargin="-50px"
-                                     // onLetterAnimationComplete={handleAnimationComplete}
                                  />
                              </div>
                              <div>
@@ -119,7 +111,6 @@ export default function Home() {
                                      delay={50}
                                      animateBy="words"
                                      direction="top"
-                                     // onAnimationComplete={handleAnimationComplete}
                                      className="lg:text-xl text-lg mb-8"
                                  />
                              </div>
@@ -210,6 +201,6 @@ export default function Home() {
                   </div>
               </div>
           </div>
-      </div>
+      </>
   )
 }
