@@ -58,7 +58,7 @@ export default function Home() {
                                         animateOpacity
                                         scale={1.1}
                                         threshold={0.2}
-                                    >I'am Ready For Job</AnimatedContent>
+                                    >I'am Ready For Colaboration</AnimatedContent>
                                 </div>
                                  <AnimatedContent
                                      distance={150}
@@ -71,7 +71,7 @@ export default function Home() {
                                      threshold={0.2}
                                  >
                                      <RotatingText
-                                         texts={['Web Design', 'Web Development', 'Web Programming', 'AI Developer']}
+                                         texts={['Coder', 'Technology Enthusiast', 'Programming']}
                                          mainClassName="p-0 sm:px-2 md:px-3 bg-[#C6DE41] text-[#2D6E7E] overflow-hidden sm:py-1 md:py-2 justify-center rounded-full lg:text-2xl text-xl font-bold inline-flex transition-all"
                                          staggerFrom={"last"}
                                          initial={{ y: "100%" }}
@@ -107,7 +107,7 @@ export default function Home() {
                              </div>
                              <div>
                                  <BlurText
-                                     text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem commodi dolorum inventore ipsum molestias sint tempore. Asperiores debitis dicta dolor ea iure nulla quam similique voluptas. Non, saepe, sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                                     text="Someone who loves the world of technology, especially in the field of programming. Currently I am working on a project called appsch, and continue to learn and develop skills in technologies such as Node.js, JavaScript, TypeScript, PHP, Laravel, Express.js, and Next.js."
                                      delay={50}
                                      animateBy="words"
                                      direction="top"

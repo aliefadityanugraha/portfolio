@@ -17,7 +17,7 @@ export default function Navbar() {
                     scale={1.1}
                     threshold={0.2}
                 >
-                    <a className="lg:text-3xl text-xl font-bold" href="/">Portfolio.</a>
+                    <a className="lg:text-3xl text-xl font-bold" href="/">Aliefaditya.</a>
                 </AnimatedContent>
                 <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
                     <ul className="hidden gap-6 lg:text-lg text-sm sm:flex">
